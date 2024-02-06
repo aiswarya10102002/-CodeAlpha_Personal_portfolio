@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2 class="heading">
+            <span class="skyBlue">My</span>
+            <span>Portfolio.</span>
+        </h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timeline">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certification">Certifications</a></li>
+        </ul>
+        <div class="hamburger" id="menuBar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="lists" id="menuLists">
+            <div id="cross"><i class="fas fa-times"></i></div>
+            <ul class="items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certification">Certfications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="mainSection">
+        <!-- Your existing content for the Home section -->
+        <div class="content">
+            <h2 class="title">
+                <span class="minorHeading">
+                    Hey
+                </span><br>
+                <span class="mainHeading">
+                    I'm <span class="danger">Aiswarya |</span>
+                </span>
+            </h2>
+            <p class="description">
+                Hello and welcome to my portfolio! I am a dedicated Computer Science student with a keen interest in the dynamic and ever-evolving fields of web design and Java programming. My journey in the world of technology has been marked by a relentless pursuit of knowledge and a commitment to creating innovative and user-friendly digital solutions.
+            </p>
+            <div class="buttons">
+                <button class="hireBtn"><a href="\Aiswarya_saveethaeng.pdf" target="_blank">Resume</a></button>
+            </div>
+            <div class="social">
+                <a href="mailto:aiswaryapalanisamy02@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/aiswarya-p-a2529a201/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/aiswarya10102002" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        
+        <div class="user">
+           
+            <img src="/img1.jpeg" alt="" width="50%">
+        </div>
+    </section>
+    
+   
+
+    <section id="skills" class="skillsection" >
+        <div class="skill_title">
+        <div class="head">SKILLS</div>
+            <p class="subhead">Here are some of my skills on which I have been working for the past 2 years.</p>
+        </div>
+        
+        <br/>
+        <div class="skillcontainer">
+            <div class="frontend">
+                <div class="title_card">frontend</div>
+                <div class="elements">
+                    <div class="fle1">React</div>
+                <div class="fle2">Html</div>
+                <div class="fle3">Css</div>
+                <div class="fle4">Javascript</div>
+                <div class="fle5">Boostrap</div>
+                </div>
+                </div>
+        
+            <div class="backend">
+                <div class="title_card">Backend</div>
+                <div class="elements">
+                    <div class="fle1">SQL</div>
+                <div class="fle2">Java</div>
+                <div class="fle3">Node Js</div>
+                <div class="fle4">Python</div>
+                
+            </div>
+            </div>
+            <div class="programs">
+                <div class="title_card">Programming</div>
+                <div class="elements">
+                    <div class="fle1">Core Java</div>
+                <div class="fle2">Python</div>
+                
+            </div>
+            </div>
+            <div class="others">
+
+                <div class="title_card">others</div>
+                <div class="elements">
+                    <div class="fle1">Github</div>
+                <div class="fle2">Netlify</div>
+                <div class="fle3">Figma</div>
+                
+            </div>
+            </div>
+        </div>
+
+        
+        <div class="explore">
+            <button class="open-button"onclick="openForm()">Chat</button>
+
+            <div class="chat-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+               <h3>Which section do you want to explore?</h3>
+               <div class="bro" onclick="scrollTohome()">Home</div>
+               <div class="bro" onclick="scrollToSkills()">Skills</div>
+
+               <div class="bro" onclick="scrollToEdu()">Education</div>
+               
+               <div  class="bro" onclick="scrollToPro()">Projects</div>
+                <div class="bro" onclick="scrollToCon()">Certifications</div>
+
+
+                <div class="hirebutton">
+                <button class="pink-btn"onclick="openmail()">Hire Me!</button>
+                <div id="mail">
+                    <a href="mailto:aiswaryapalanisamy02@gmail.com" target="_blank"></a>
+                </div>
+                </div>
+
+
+                <div class="bro">
+                    <button><a href="\Aiswarya_saveethaeng.pdf" target="_blank">Resume</a></button>
+                </div>
+                <div class="bro" >
+                <button  type="button"  onclick="closeForm()" >Close</button>
+                </div>
+            </div>
+        </div>
+            
+
+         <!--Your content for the Skills section-->
+    </section>
+
+    
+    <!-- Repeat similar sections for Education-->
+
+    <section id= "timeline">
+        <div class="head">EDUCATION</div>
+        <ul class= "line">
+          <li>
+            <div class="cont">
+              <h3>Saveetha Engineering college</h3>
+              <p>
+               Stream-->Computer Science
+               CGPA-->9
+               <br/>
+               <b>chennai</b>
+              </p>
+              <time>2020-2024</time>
+            </div>
+          </li>
+          <li>
+            <div class="cont">
+              <h3>SRV Higher school</h3>
+              <p>Stream --> Computer Science 
+                Marks --> 90%
+                <br/>
+                <b>Trichy</b>
+         </p>
+              <time>2018-2020</time>
+            </div>
+          </li>
+          <li>
+            <div class="cont">
+              <h3>RVMHS School</h3>
+              <p>
+              Marks --> 85%
+              <br/>
+              <b>Villupuram</b>
+              </p>
+              <time>Upto 2018</time>
+            </div>
+          </li>
+          
+        </ul>
+        
+      </section>
+      <!-- Repeat similar sections for project-->
+      <section id="projects" class="projectsection">
+        
+        <div class="pro">PROJECTS</div>
+        
+        <div class="projectcontainer">
+
+
+                      
+
+            <div class="slider">
+  
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+              
+                <div class="slides">
+                  <div id="slide-1" class="topic-1">
+                    <h1>Face Mask Detection Using Python</h1>
+                    <p>Developed a Face Mask Detection system using Python, leveraging computer
+                        vision and deep learning techniques. Utilized popular libraries such as OpenCV
+                        and TensorFlow to detect and classify individuals based on the presence or
+                        absence of a face mask. The project involved training a Convolutional Neural
+                        Network (CNN) on a dataset of masked and unmasked faces, achieving accurate
+                        and real-time detection results. </p>
+                  </div>
+                  <div id="slide-2" class="topic-2">
+                    <h1>Netflix Data Analysis</h1>
+                    <p>Performing Netflix data analysis involves examining the streaming service's user-related and content-related data to gain insights. This may include user preferences, watch history, popular genres, and viewer demographics. The analysis can help Netflix improve content recommendations, optimize user experience, and make data-driven decisions for content production and acquisition.</p>
+                  </div>
+                  <div id="slide-3" class="topic-3">
+                    <h1  style="color: aliceblue;">Speech Transcriber</h1>
+                    
+                    <p style="color: black;">A speech transcriber using JavaScript converts spoken words into written text in real-time. This is typically achieved using Web Speech API, allowing users to speak into a microphone, and the JavaScript code transcribes the spoken words, displaying them as text on the user interface. 
+                    <br><a href="https://speechconvertertotext.netlify.app">Website</a></b></p>
+                  </div>
+                  <div id="slide-4" class="topic-4">
+                    <h1 style="color: aliceblue;">calculator</h1>
+                    <p style="color: black;">A calculator is a simple electronic or software tool used for mathematical calculations. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division. Modern calculators often include additional functions, such as square root, exponentiation, and memory features. <br><a href="https://aiswarya10102002.github.io/calculator/">Website</a></b> </p>
+                  </div>
+                  <div id="slide-5" class="topic-5">
+                    <h1 >To Do List App</h1>
+                    <p>A to-do app is a task management application designed to help users organize and prioritize their daily activities. Users can create, edit, and delete tasks, set deadlines, and mark tasks as completed. To-do apps are valuable for personal productivity, project management, and keeping track of deadlines. They are commonly used in both professional and personal contexts to enhance organization and efficiency.<br><a href="https://aiswarya10102002.github.io/todo-app/">Website</a></b></p>
+                  </div>
+                </div>
+              </div>
+
+      </section>
+      <section id="certification" class="Certifications">
+        <div class="head">CERTIFICATIONS & WORKSHOPS</div>
+        <div class="certcontainer">
+
+        <div class="container">
+            <div class="cover-photo">
+              <img src="img9.jpg" class="profile">
+            </div>
+            <div class="profile-name">CORE JAVA</div>
+            <p class="about">Java Basics<br>Object-Oriented Programming (OOP)<br>Exception Handling<br>Collections Framework<br>Multithreading</p>
+           
+            
+               </div>
+    
+          <div class="container">
+              <div class="cover-photo">
+              <img src="img10.png" class="profile">
+            </div>
+            <div class="profile-name">INTRODUCTION TO CLOUD</div>
+            <p class="about">Cloud Service Providers<br>Virtualization<br>Cloud Storage<br>Identity and Access Management (IAM)</p>
+            
+          </div>
+
+
+          <div class="container">
+            <div class="cover-photo">
+              <img src="img9.jpg"class="profile">
+            </div>
+            <div class="profile-name">FRONT END DEVELOPER COURSE</div>
+            <p class="about">HTML<br>CSS<br>JavaScript<br>React</p>
+            
+          </div><div class="container">
+            <div class="cover-photo">
+              <img src="img9.jpg" class="profile">
+            </div>
+            <div class="profile-name">WEB DEVELOPMENT</div>
+            <p class="about">Frontend Tools<br>Backend(Node,sql)</p>
+            
+          </div>
+          <div class="container">
+            <div class="cover-photo">
+              <img src="img11.jpg" class="profile">
+            </div>
+            <div class="profile-name">INTERNET OF THINGS</div>
+            <p class="about">User Interface Designer and<br>front-end developer</p>
+            
+          </div>
+        </div>
+      </section>
+      <script src="\index.js"></script>
+      <!-- End Timeline -->
+</body>
+</html>
